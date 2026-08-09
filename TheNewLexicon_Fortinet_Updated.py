@@ -27,8 +27,6 @@ BitcoinTerminology = {
     "":"",
     "":"",
     "":"",
-    # Computer Security and Systems Management Specialization (University of Colorado System / Coursera)
-    # Linux Server Management and Security terms are emphasized in this block.
     'Linux': 'Linux is an open-source, Unix-like operating system family built around the Linux kernel. In enterprise environments, Linux is widely used for servers, cloud infrastructure, networking, security appliances, containers, and automation because it is stable, configurable, and supported by many distributions.',
     'Linux distribution': 'A Linux distribution, or distro, is a complete operating system built around the Linux kernel and packaged with system utilities, libraries, a package manager, and application software. Examples include Ubuntu, Red Hat Enterprise Linux, CentOS-derived systems, Fedora, Debian, and openSUSE.',
     'Linux server': 'A Linux server is a computer running a Linux operating system to provide networked services such as web hosting, databases, file sharing, authentication, DNS, application hosting, or infrastructure management. Enterprise Linux servers are commonly administered remotely and hardened to reduce unnecessary access and services.',
