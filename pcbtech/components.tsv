@@ -1,0 +1,51 @@
+id	term	kind	implementation_status	training_level	aliases	definition
+resistor	Resistor	component	current	1	R	A resistor is a passive component that opposes current flow and is commonly used to set currents, divide voltages, bias circuits, and terminate signals.
+variable-resistor	Variable resistor	component	planned	1	Potentiometer;VR	A variable resistor is a resistor whose resistance can be adjusted mechanically or electronically within a defined range.
+capacitor	Capacitor	component	current	1	C	A capacitor stores electric charge and is commonly used for filtering, decoupling, timing, coupling, and energy storage.
+polarized-capacitor	Polarized capacitor	component	planned	1		A polarized capacitor is a capacitor that must be connected with the specified terminal polarity to avoid incorrect operation or damage.
+inductor	Inductor	component	planned	1	L	An inductor stores energy in a magnetic field and is commonly used in filtering, energy conversion, and impedance control.
+transformer	Transformer	component	planned	1	T	A transformer transfers electrical energy between windings through magnetic coupling to change voltage, current, impedance, or isolation.
+ferrite-bead	Ferrite bead	component	planned	2		A ferrite bead is a frequency-dependent passive component used to impede high-frequency noise while passing lower-frequency or DC current.
+diode	Diode	component	planned	1	D	A diode is a semiconductor component that primarily allows current in one direction and blocks it in the opposite direction within its ratings.
+rectifier-diode	Rectifier diode	component	planned	1		A rectifier diode is a diode optimized to conduct forward current and block reverse voltage in power-conversion applications.
+zener-diode	Zener diode	component	planned	1		A Zener diode is designed to operate in controlled reverse breakdown for voltage reference, limiting, or protection functions.
+tvs-diode	TVS diode	component	planned	1	TVS	A transient-voltage-suppression diode is designed to clamp short overvoltage events and protect downstream circuitry.
+led	Light-emitting diode (LED)	component	planned	1	LED	A light-emitting diode is a polarized diode that emits light when forward biased within its electrical ratings.
+photodiode	Photodiode	component	planned	2		A photodiode converts incident light into an electrical response for sensing and optical detection.
+fuse	Fuse	component	planned	1		A fuse is an overcurrent protection component designed to open a circuit when current exceeds its rated behavior for sufficient time.
+bjt-npn	NPN bipolar junction transistor	component	planned	2	NPN;BJT	An NPN bipolar junction transistor is a three-terminal semiconductor device in which base current controls a larger collector-to-emitter current.
+bjt-pnp	PNP bipolar junction transistor	component	planned	2	PNP;BJT	A PNP bipolar junction transistor is a three-terminal semiconductor device in which base drive controls current in the complementary polarity to an NPN device.
+nmos	N-channel MOSFET	component	planned	2	NMOS	An N-channel MOSFET is a voltage-controlled transistor that uses an electric field at the gate to control current through an N-type channel.
+pmos	P-channel MOSFET	component	planned	2	PMOS	A P-channel MOSFET is a voltage-controlled transistor that controls current through a P-type channel and is commonly used for high-side or complementary switching.
+op-amp	Operational amplifier	component	planned	2	Op-amp	An operational amplifier is a high-gain differential amplifier commonly used with feedback for analog amplification, filtering, buffering, and signal conditioning.
+comparator	Comparator	component	planned	2		A comparator is an analog circuit that changes its output state according to which of two input voltages is greater.
+battery	Battery	component	planned	1	Cell	A battery is an electrochemical source that supplies DC electrical energy within specified voltage, current, capacity, and temperature limits.
+voltage-regulator	Voltage regulator	component	planned	1		A voltage regulator maintains an output voltage within a specified range despite allowed changes in input voltage and load.
+linear-regulator	Linear regulator	component	planned	2	LDO	A linear regulator controls output voltage by dissipating excess input voltage as heat while operating in its regulation range.
+switching-regulator	Switching regulator	component	planned	2	Buck;Boost;DC-DC	A switching regulator converts electrical power by rapidly switching energy-storage elements to achieve efficient voltage conversion.
+power-module	Power module	component	planned	2		A power module is an integrated assembly that combines power-conversion components into a defined electrical and mechanical interface.
+not-gate	NOT gate	component	current	1	Inverter	A NOT gate produces the opposite digital logic state of its input after the specified propagation delay.
+and-gate	AND gate	component	current	1		An AND gate produces a high output only when all required inputs are high under the simulator's logic rules.
+or-gate	OR gate	component	current	1		An OR gate produces a high output when at least one required input is high under the simulator's logic rules.
+nand-gate	NAND gate	component	planned	1		A NAND gate produces the logical inverse of an AND operation.
+nor-gate	NOR gate	component	planned	1		A NOR gate produces the logical inverse of an OR operation.
+xor-gate	XOR gate	component	planned	1	Exclusive OR	An XOR gate produces a high output when its relevant binary inputs differ according to the implemented logic convention.
+xnor-gate	XNOR gate	component	planned	1	Exclusive NOR	An XNOR gate produces the logical inverse of an XOR operation.
+flip-flop	Flip-flop	component	planned	2		A flip-flop is a digital storage element that holds one bit of state according to its clocking and control behavior.
+microcontroller	Microcontroller	component	planned	1	MCU	A microcontroller is an integrated circuit that combines a processor core with memory and peripherals for embedded control tasks.
+processor	Processor	component	planned	1	CPU	A processor is a programmable integrated circuit that executes instructions to perform computation and control functions.
+memory	Memory device	component	planned	1	RAM;Flash;EEPROM	A memory device stores digital information using a defined technology, interface, capacity, and timing specification.
+asic	Application-specific integrated circuit (ASIC)	component	planned	1	ASIC	An application-specific integrated circuit is a chip designed to perform a specialized set of functions rather than general-purpose computing.
+temperature-sensor	Temperature sensor	component	planned	1		A temperature sensor converts temperature into an electrical or digital signal according to its specified range and accuracy.
+current-sensor	Current sensor	component	planned	1		A current sensor measures electrical current and produces a corresponding analog or digital output.
+light-sensor	Light sensor	component	planned	1		A light sensor measures incident light and produces an electrical or digital response.
+crystal	Crystal resonator	component	planned	1	Crystal	A crystal resonator uses piezoelectric resonance to provide a stable frequency reference when used in a suitable circuit.
+oscillator	Oscillator	component	planned	1		An oscillator generates a periodic signal at a defined nominal frequency and electrical interface.
+connector	Connector	component	planned	1	J	A connector provides a detachable or permanent electrical interface between a PCB and another circuit, cable, board, or device.
+switch	Switch	component	planned	1	SW	A switch mechanically or electronically changes the conductive state between defined terminals.
+relay	Relay	component	planned	1	K	A relay uses an electrical control signal to open or close electrically isolated or separately rated contacts.
+test-point	Test point	component	planned	1	TP	A test point is an intentionally accessible electrical connection used for measurement, debugging, programming, or production test.
+display	Display	component	planned	1		A display is an output component that presents visual information through segments, pixels, characters, or another defined interface.
+buzzer	Buzzer	component	planned	1		A buzzer is an electrically driven component that produces audible sound when energized with an appropriate signal.
+motor	Motor	component	planned	1		A motor converts electrical energy into mechanical rotation or motion within its drive and load ratings.
+mounting-hole	Mounting hole	mechanical_object	planned	1		A mounting hole is a mechanical board feature used for fastening or alignment and is not automatically an electrical component.
