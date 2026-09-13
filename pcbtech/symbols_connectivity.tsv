@@ -1,0 +1,22 @@
+id	term	kind	implementation_status	training_level	aliases	definition
+schematic-symbol	Schematic symbol	symbol	current	1		A schematic symbol is the standardized logical graphic used to represent a component or electrical function on a schematic.
+footprint	Footprint	board_object	current	1		A footprint is the PCB pad, hole, courtyard, and placement pattern assigned to a specific component package.
+pad	Pad	board_object	current	1		A pad is a conductive land on a PCB used to connect a component terminal, via, or test connection to copper.
+pin	Pin	concept	current	1		A pin is a logical terminal on a schematic component that connects the component to a net.
+footprint-pad	Footprint pad	board_object	current	2		A footprint pad is a numbered or named physical connection point in a PCB footprint.
+simulation-terminal	Simulation terminal	simulation_concept	current	2		A simulation terminal is the node connection used by a simulation model and may require explicit mapping to a component pin.
+pin-mapping	Pin mapping	validation_concept	current	2		A pin mapping explicitly links a component pin to its footprint pad and simulation-model terminal.
+net	Net	concept	current	1		A net is a named electrical connection shared by two or more pins, pads, or conductive board features.
+wire	Wire	symbol	planned	1		A wire is a schematic connection line that electrically joins pins and other schematic connection objects.
+junction	Junction	symbol	planned	1		A junction is a schematic connection point showing that intersecting wires are electrically joined.
+no-connect	No-connect flag	symbol	planned	1	NC flag	A no-connect flag marks a schematic pin as intentionally left unconnected.
+net-label	Net label	symbol	planned	1		A net label assigns a name to a schematic connection so separated drawing locations can represent the same electrical net.
+ground-symbol	Ground symbol	symbol	planned	1	GND	A ground symbol identifies a designated reference or return net in a schematic and does not by itself represent a purchased physical component.
+power-symbol	Power symbol	symbol	planned	1		A power symbol identifies a named supply net such as VCC, VDD, or +3V3 without representing a physical inventory item by itself.
+bus	Bus	concept	planned	2		A bus is a grouped representation of multiple related signals or nets used to simplify schematic or logic views.
+passive-pin	Passive pin	pin_type	current	1	Passive	A passive pin is a terminal type that does not assert power or digital-drive behavior during topology-only electrical-rule checks.
+power-input-pin	Power input pin	pin_type	current	1	PowerInput	A power input pin is a terminal type intended to receive electrical power from a suitable source.
+power-output-pin	Power output pin	pin_type	current	1	PowerOutput	A power output pin is a terminal type intended to provide electrical power to other parts of a circuit.
+digital-input-pin	Digital input pin	pin_type	current	1	DigitalInput	A digital input pin is a terminal type intended to receive a digital logic signal.
+digital-output-pin	Digital output pin	pin_type	current	1	DigitalOutput	A digital output pin is a terminal type intended to drive a digital logic signal.
+open-drain-pin	Open-drain pin	pin_type	current	2	OpenDrain	An open-drain pin is a digital output type that can actively pull a net low but normally requires an external pull-up to produce a high state.
