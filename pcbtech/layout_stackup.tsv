@@ -1,0 +1,28 @@
+id	term	kind	implementation_status	training_level	aliases	definition
+board-outline	Board outline	board_object	planned	1		The board outline defines the physical perimeter of the PCB used for placement, routing, mechanical checks, and fabrication data.
+copper-layer	Copper layer	layer_type	current	1	Copper	A copper layer is a conductive PCB layer used to form traces, pads, planes, and zones.
+dielectric-layer	Dielectric layer	layer_type	current	1	Dielectric	A dielectric layer is an insulating PCB material layer that separates conductors and influences electrical and mechanical behavior.
+stackup	PCB stackup	concept	current	2		A PCB stackup is the ordered top-to-bottom definition of conductive and dielectric layers, thicknesses, materials, and sourced properties.
+relative-permittivity	Relative permittivity	material_property	current	3	Dk;Er	Relative permittivity describes how a dielectric material stores electric-field energy compared with vacuum and is an important input to impedance analysis.
+loss-tangent	Loss tangent	material_property	current	3	Df	Loss tangent quantifies dielectric energy loss and is an important material input for frequency-dependent signal-loss analysis.
+trace	Trace	board_object	current	1		A trace is a routed copper conductor that electrically connects points on the same PCB layer.
+trace-width	Trace width	design_parameter	current	1		Trace width is the physical width of a routed copper conductor and must satisfy the applicable geometry and current requirements.
+via	Via	board_object	current	1		A via is a plated hole or structure that electrically connects copper features on different PCB layers.
+via-drill	Via drill	design_parameter	current	1		Via drill is the diameter of the drilled or formed hole associated with a through, blind, buried, or other supported via type.
+annular-ring	Annular ring	design_parameter	current	2		An annular ring is the radial copper width surrounding a drilled hole or via barrel on a conductive layer.
+clearance	Clearance	design_parameter	current	1		Clearance is the minimum allowed physical spacing between specified conductive or mechanical PCB features under a defined rule.
+copper-zone	Copper zone	board_object	planned	1	Copper pour	A copper zone is a filled conductive region typically assigned to a net for power distribution, grounding, shielding, or thermal purposes.
+plane	Plane	board_object	planned	2		A plane is a broad conductive region or layer used as a low-impedance reference, power distribution structure, or return path.
+keepout	Keepout	board_object	planned	1		A keepout is a board region that prohibits selected objects such as copper, traces, vias, components, or routing from entering it.
+mechanical-object	Mechanical object	board_object	planned	1		A mechanical object represents non-electrical board geometry such as cutouts, dimensions, mounting features, or enclosure constraints.
+current-load	Current load	design_parameter	current	2		Current load is the caller-supplied current assigned to a trace for comparison with an independently sourced current limit.
+current-limit	Current limit	validation_concept	current	2		A trace current limit is a sourced maximum current value used for validation under the conditions that produced that limit.
+controlled-impedance	Controlled impedance	design_constraint	current	3		Controlled impedance is a design requirement that constrains a routed interconnect to a specified characteristic impedance within a defined tolerance.
+single-ended-impedance	Single-ended impedance	design_constraint	current	3	single_ended	Single-ended impedance is the characteristic impedance of one signal conductor referenced to its return structure.
+differential-impedance	Differential impedance	design_constraint	current	3	differential	Differential impedance is the impedance seen by the opposing signal currents of a defined differential pair.
+differential-pair	Differential pair	concept	planned	3		A differential pair is a matched pair of conductors intended to carry equal and opposite signal components with controlled geometry and coupling.
+return-path	Return path	concept	current	3		A return path is the conductive route taken by signal return current relative to its outgoing signal path.
+return-path-discontinuity	Return-path discontinuity	design_constraint	current	3		A return-path discontinuity is a gap, transition, or interruption that forces return current away from its intended reference route.
+microvia	Microvia	board_object	planned	3		A microvia is a small fabricated via, commonly laser formed, used for high-density interconnection between selected adjacent or nearby layers.
+via-in-pad	Via in pad	board_object	planned	3		Via in pad is a PCB construction technique that places a via directly within a component pad and may require specialized filling or capping.
+bga-fanout	BGA fanout	layout_concept	planned	3		BGA fanout is the routing and via strategy used to escape signals from the dense pad field of a ball-grid-array package.
