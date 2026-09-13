@@ -1,0 +1,31 @@
+id	term	kind	implementation_status	training_level	aliases	definition
+pdn	Power distribution network (PDN)	concept	current	2	PDN	A power distribution network is the interconnected source, conductors, planes, vias, capacitors, and loads that deliver power across a circuit.
+target-impedance	Target impedance	design_constraint	current	3	Ztarget	Target impedance is the maximum desired PDN impedance derived from an allowed voltage deviation divided by a specified load-current step.
+voltage-ripple	Voltage ripple	design_parameter	current	2		Voltage ripple is the allowed or measured variation of a power rail around its intended level over a specified condition or bandwidth.
+load-step	Load step	design_parameter	current	2		A load step is a specified change in current demand used to evaluate power-delivery response.
+analysis-bandwidth	Analysis bandwidth	design_parameter	current	2		Analysis bandwidth is the frequency range over which a requirement or simulation result is intended to apply.
+decoupling	Decoupling	concept	current	2		Decoupling is the use of local energy storage and controlled connection impedance to reduce supply disturbances seen by a circuit load.
+decoupling-capacitor	Decoupling capacitor	component_role	current	2		A decoupling capacitor is a capacitor placed and selected to help provide local transient current and reduce power-rail impedance over a useful frequency range.
+esr	Equivalent series resistance (ESR)	model_parameter	current	3	ESR	Equivalent series resistance models the resistive loss associated with a real capacitor or other reactive component.
+esl	Equivalent series inductance (ESL)	model_parameter	current	3	ESL	Equivalent series inductance models the inductive behavior introduced by a real capacitor, package, and connection structure.
+connection-distance	Connection distance	design_parameter	current	2		Connection distance is the physical separation between a required decoupling component and its target connection as constrained by the design rule.
+spice	SPICE	simulation_concept	current	2	ngspice	SPICE is a family of circuit-simulation methods and tools that solve mathematical models of electronic components and networks.
+spice-resistor	SPICE resistor	simulation_element	current	2		A SPICE resistor is a simulation element defined by a reference, two nodes, and a resistance value.
+dc-voltage-source	DC voltage source	simulation_element	current	1		A DC voltage source is a circuit or simulation element that maintains a specified voltage polarity between two nodes within its model assumptions.
+operating-point	Operating-point analysis	simulation_mode	partial	2	OP analysis	Operating-point analysis calculates the steady-state DC voltages and currents of a circuit model before time-varying behavior is considered.
+logic-low	Logic Low	logic_state	current	1	Low	Logic Low is the digital simulator state representing the low logical value.
+logic-high	Logic High	logic_state	current	1	High	Logic High is the digital simulator state representing the high logical value.
+logic-unknown	Logic Unknown	logic_state	current	1	Unknown;X	Logic Unknown is the digital simulator state used when a valid high or low result cannot be determined from the available inputs and rules.
+digital-event	Digital event	simulation_concept	current	2		A digital event records a logic-state change or stimulus on a named net at a specified simulation time.
+propagation-delay	Propagation delay	simulation_parameter	current	2		Propagation delay is the specified time between an input change and the resulting output change of a digital element.
+event-driven-simulation	Event-driven simulation	simulation_mode	current	2		Event-driven simulation advances a digital model by processing discrete scheduled state changes rather than continuously solving every point in time.
+erc	Electrical rule check (ERC)	validation_action	current	1	ERC	An electrical rule check examines schematic connectivity and typed-pin relationships for implemented topology errors or warnings without inventing missing electrical behavior.
+drc	Design rule check (DRC)	validation_action	planned	1	DRC	A design rule check compares PCB geometry and assignments against implemented layout and fabrication constraints.
+visual-only	Visual-only accuracy	accuracy_tier	current	1	VisualOnly	Visual-only accuracy means an asset can support appearance or interaction but lacks enough verified engineering data for electrical or fabrication claims.
+partial-accuracy	Partial accuracy	accuracy_tier	current	1	Partial	Partial accuracy means some engineering properties or mappings are verified while other required information remains incomplete or unsupported.
+verified-accuracy	Verified accuracy	accuracy_tier	current	2	Verified	Verified accuracy means the required data for the supported scope has passed the project's validation contract with revisioned supporting sources.
+fabrication-export-gate	Fabrication export gate	validation_concept	current	2		A fabrication export gate blocks manufacturing output when required geometry, mappings, sources, or validations are missing or invalid.
+engineering-signoff	Engineering signoff	validation_concept	current	3		Engineering signoff is permission to treat a requirement as satisfied only after the required validated solver, data, and checks support that conclusion.
+canonical-record	Canonical record	data_concept	current	3		A canonical record is a deterministic serialized representation used to make validation inputs and outputs reproducible and comparable.
+solver-input	Solver input	data_concept	current	3		Solver input is validated structured data that is permitted to be passed to an engineering solver without claiming the solver's result in advance.
+measured-vs-modelled	Measured-versus-modelled calibration	validation_concept	planned	3		Measured-versus-modelled calibration compares simulation results with instrumented measurements while preserving fixture, environment, model, version, uncertainty, and timestamp provenance.
