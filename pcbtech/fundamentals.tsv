@@ -1,0 +1,22 @@
+id	term	kind	implementation_status	training_level	aliases	definition
+printed-circuit-board	Printed Circuit Board (PCB)	concept	current	1	PCB	A printed circuit board is a mechanically supported structure that uses patterned conductors, insulating materials, and mounted components to form an electronic circuit.
+schematic	Schematic	concept	current	1		A schematic is a logical drawing that shows components and electrical connections without requiring their physical board positions.
+board-layout	Board layout	concept	current	1		Board layout is the physical arrangement of components, copper, holes, and mechanical features on a PCB.
+component-instance	Component instance	concept	current	1		A component instance is one placed occurrence of a catalog part with a stable identity such as R1, C1, or U1.
+reference-designator	Reference designator	concept	current	1	RefDes	A reference designator is the short unique label, such as R1 or U3, used to identify one component instance.
+catalog-id	Catalog ID	data_field	current	2		A catalog ID is the stable internal identifier that links one part record to its symbol, footprint, models, properties, and mappings.
+manufacturer	Manufacturer	data_field	current	1		The manufacturer is the company identified as the producer of a specific electronic component.
+part-number	Part number	data_field	current	1		A part number is the manufacturer-assigned identifier for a specific component or component variant.
+package	Package	concept	current	1		A package is the physical body and terminal arrangement in which an electronic component is manufactured.
+pin-count	Pin count	data_field	current	1		Pin count is the number of logical or physical terminals associated with a component package as defined by its authoritative data.
+function-tag	Function tag	data_field	current	1		A function tag is a searchable label that describes what a catalog part can do without changing its primary component family.
+synonym	Synonym	data_field	current	1		A synonym is an alternate searchable name that resolves to the same catalog identity.
+authoritative-source	Authoritative source	validation_concept	current	2		An authoritative source is a revisioned manufacturer, standards, or upstream engineering reference used to support a part property or model.
+revision	Revision	data_field	current	2		A revision is a version identifier that records exactly which source, symbol, footprint, model, or dataset was used.
+unknown-data	Unknown data	validation_concept	current	1		Unknown data is information that has not been verified or supplied and must not be silently guessed to satisfy a design rule.
+tolerance	Tolerance	concept	current	1		Tolerance is the allowed variation of a component value or design requirement from its nominal value.
+polarity	Polarity	concept	current	1		Polarity identifies terminals or orientations that must be connected in the correct positive, negative, anode, cathode, or equivalent direction.
+orientation-marker	Orientation marker	concept	current	1		An orientation marker identifies the required rotational or pin-one reference for correctly placing a polarized or keyed component.
+mounting-style	Mounting style	concept	current	1		Mounting style describes how a component is physically attached to the board, such as surface mount or through hole.
+surface-mount	Surface-mount technology (SMT)	concept	current	1	SMT;SMD	Surface-mount technology attaches component terminals to pads on the outer surfaces of a PCB.
+through-hole	Through-hole technology (THT)	concept	current	1	THT	Through-hole technology mounts component leads through drilled board holes and solders them to plated pads.
